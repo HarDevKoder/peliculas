@@ -76,10 +76,19 @@ button{
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .resultado{
   width: fit-content;
   margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+span{
+  display: block;
+  text-align: center;
   padding: 10px;
 }
