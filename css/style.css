@@ -1,44 +1,50 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 @font-face {
-  font-family: 'miFuente';
-  src: url('../fuentes/openSans.ttf');
+  font-family: "miFuente";
+  src: url("../fuentes/openSans.ttf");
 }
 
-html{
+html {
   font-family: miFuente;
 }
 
-body{
+body {
   background: azure;
   color: azure;
 }
-.tituloPrincipal{
+.tituloPrincipal {
   text-align: center;
 }
 
-.subtitulo{
+.subtitulo {
   padding: 10px;
 }
 
-.descripcion{
+.descripcion {
   padding: 10px;
 }
 
-.contenedorGeneral{
+.descripcion p{
+  font-size: 1.1em;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.contenedorGeneral {
   background: rgb(137, 12, 253);
   border: 1px solid silver;
-  margin:0 auto;
+  margin: 0 auto;
   width: 70%;
   height: 100vh;
   padding: 30px;
 }
 
-.datos{
+.datos {
   border: 1px solid silver;
   display: flex;
   gap: 10px;
@@ -51,7 +57,7 @@ body{
   margin: 10px auto;
 }
 
-.txtEdad{
+.txtEdad {
   width: 50px;
   font-size: 1.1em;
   font-weight: 600;
@@ -66,20 +72,22 @@ body{
   margin: 0;
 }
 
-.botonesCategorias{
+.botonesCategorias {
   width: fit-content;
   margin: 20px auto;
   padding: 10px;
 }
 
-button{
+button {
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  color: black;
+  font-weight: bold;
 }
 
-.resultado{
+.resultado {
   width: fit-content;
   margin: auto;
   padding: 10px;
@@ -87,8 +95,16 @@ button{
   justify-content: center;
 }
 
-span{
+span {
   display: block;
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .contenedorGeneral {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+  }
 }
