@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peliculas</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="contenedorGeneral">
+    <div class="tituloPrincipal">
+      <h1>Bienvenidos al Cine!</h1>
+      <hr>
+    </div>
+    <div class="subtitulo">
+      <h2>-- Menú --</h2>
+    </div>
+    <div class="descripcion">
+      <p>
+        Queremos hacer de tu visita, una experiencia mas placentera. Para eso, Ingresa tu edad y selecciona el género que más te guste, y te recomedamos tu pelicula ideal.
+      </p>
+    </div>
+    <div class="datos">
+      <p>Edad:</p>
+      <input type="number" class="txtEdad" id="cajaEdad">
+    </div>
+    <div class="botonesCategorias">
+      <button>Drama</button>
+      <button>Comedia</button>
+      <button>Musical</button>
+      <button>Crimen</button>
+    </div>
+    <div class="resultado">
+      <h3>Nuestra Recomendación: <span id="peliculaRecomendada"></span></h3>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
